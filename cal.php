@@ -107,6 +107,7 @@
 include('includes/database.inc.php');
 
 session_start();
+echo "helloooo";
 if($_SESSION["memberID"] != NULL){
 	if (isset($_GET["submit"])) {
 		$mass = $_GET['weight'];
