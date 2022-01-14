@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Health Care Web Site</title>
+        <link href="images/Logo.png" rel="icon">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">    
+
+<style>
+    .login ul{
+        list-style-type: none;
+    }
+</style>
+</head>
+
+<body>
+<section class ="header">
+    <nav>
+        <a href="index.html"><img src="images/Logo.png"></a>
+      
+        <div class="login">
+            <ul>
+                <li><a href="login.php"><button onclick="myFunction()"
+                    style="width:auto;">Login</button>
+                </a>
+                <a href="signup.php"><button onclick="myFunction()"
+                    style="width:auto;">Sign in</button>
+                
+                </a></li>
+            </ul>
+        <div class="nav-links" id="navLinks">
+            
+            <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                          
+                <ul>
+              
+                <li><a href="login.php">Calculate BMI</a></li>
+                <li><a href="login.php">Get your meal plan</a></li>
+                <li><a href="login.php">Get your Excersice Plan</a></li>
+                <li><a href="login.php">Channel your Doctor</a></li>
+                
+            </ul>
+        </div>
+    </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+<h1>Welcome to Healthcare Center!</h1>
+<p>We will lead to a healthy nation with healthy citizens.</p>
+
+
+</div>
+
+
+</section>
+
+<!-----------2nd page------------>
+
+<section class="services">
+   
+    <div class="row0">
+        <div class="col">
+            <h1>Our Goal</h1>
+        <p>We will lead to a Healthy Nation with Healthy Citizens,
+             <br>Any citizen above Age 15 can use this app in order to get tips & 
+            <br>guidance for a healthy lifestyle.<br></p>    
+        </div>
+        <h1>Our Services</h1>
+        <p>A Cloud-based software provides two main services. <br>
+            The first one is helping citizens to maintain their health by <br>receiving instructions 
+            under doctor's guidance. The second one is help to patients.<br>
+            to channel their doctors.</p>    
+        
+    </div>
+            
+        <div class="row">
+            <div class="services-col col1">
+                 <h3>Calculate BMI</h3>
+                 <p>Body Mass Index is a simple calculation using a person’s height and weight. 
+                    <br>The formula is BMI = kg/m2 where kg is a person’s weight is kilograms and m2 is their 
+                    <br>height meters squared.</p>
+                </div>
+ 
+                <div class="services-col col2">
+                    <h3>Get your meal plan</h3>
+                    <p>Meal planning is asking what’s for dinner question once for the whole week, <br>
+                        instead of every night, and then shopping <br>for and prepping the ingredients 
+                        before cooking.</p>
+                   </div>
+            
+                   
+                   <div class="services-col col3">
+                    <h3>Get your Excersice Plan</h3>
+                    <p>Exercise is one of the best ways to improve symptoms of arthritis. <br>
+                        I have arthritis should I exercise and how. <br>
+                        Activities for all ages. Get inspired. Improve your health.</p>
+                   </div>
+
+                   <div class="services-col col4">
+                    <h3>Channel your Doctor</h3>
+                    <p>Meet your Doctor. Whether are just checking to make sure things are <br>on track, 
+                        or have a specific symptom you are <br>concerned about, 
+                        choosing your doctor according to your needs.</p>
+                   </div>
+        </div>
+</section>
+
+<!-----------3nd page------------>
+
+<selection class="end">
+    <div class="row4">
+        
+<h1>You can connect us from <br>anywhere in the world</h1>
+<a href="aboutUs.html" class="hero-btn">CONTACT US</a>
+        </div>
+
+        <div class="last">
+            
+    <h4>About Us</h4>
+    <p>The about us page is commonly used by all types of businesses 
+        <br>to give customers more insight into who is involved with a 
+        <br>given business and exactly what it does</p>
+        <div class="row text-center pt-4">
+            <div class="col-md-12 col-sm-12">
+                <a href="#" class="text-secondary text-decoration-none">
+                    <i class="fab fa-instagram fa-2x px-2"></i>
+                    <i class="fab fa-facebook fa-2x px-2"></i>
+                    <i class="fab fa-linkedin fa-2x px-2"></i>
+                    <i class="fab fa-github fa-2x px-2"></i> </a>
+                <p class="pt-4 text-muted"> Copyright ©️ 2021 All Right Reserverd <span>TEAM ICONS</span> </p>
+            </div>
+        </div>
+</div>
+</section>
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"; 
+    }
+
+</script>
+
+</body>  
+</html>
+<!------<div class="row text-center pt-4">
+    <div class="col-md-12 col-sm-12">
+        <a href="#" class="text-secondary text-decoration-none">
+            <i class="fab fa-instagram fa-2x px-2"></i>
+            <i class="fab fa-facebook fa-2x px-2"></i>
+            <i class="fab fa-linkedin fa-2x px-2"></i>
+            <i class="fab fa-github fa-2x px-2"></i> </a>
+        <p class="pt-4 text-muted"> Copyright ©️ 2021 All Right Reserverd <span>TEAM ICONS</span> </p>
+    </div>
+</div>------>
+

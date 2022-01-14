@@ -1,0 +1,418 @@
+*{
+     margin: 0;
+     padding: 0;
+     font-family: 'Source Serif Pro', serif;
+} 
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/back.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.login{
+    display: block;
+      
+    text-align: right;
+    font-size: 28px;
+    margin-right: 50px;
+}
+nav{
+    display:flex;
+    padding: 0% 0%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 300px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 2px 20px;
+    position: relative;
+}
+.nav-links ul a{
+    color: rgb(77, 77, 77);
+    text-decoration: rgb(100, 99, 99);
+    font-size: 24px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #01640d;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: rgb(4, 5, 4);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 50px;
+    color: rgb(2, 43, 5);
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 30px;
+    color: rgb(2, 87, 34);
+    font-family: 'Source Serif Pro', serif;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: rgb(1, 63, 17);
+    color: rgb(75, 153, 75);
+    border: 1px solid rgb(7, 80, 0);
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #013104;
+    background: #00460c;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #16a122;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transform: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+
+/*-----------2nd page-----------*/
+
+.services{
+    min-height: 100vh;
+    width: 100%;
+    /* background-image: linear-gradient(rgba(225, 227, 235, 0.7),rgba(4,9,30,0.7)), */
+    background-image: url(images/page2_.jpg);
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.services-col{
+    width: 500px;
+    height: 280px;
+    display: inline-block;
+    border-radius: 10%;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 15px 25px;
+    background-image: url(images/bmi2.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.col1{
+    background-image: url(images/bmi.jpg);
+}
+.col2{
+    background-image: url(images/mealplan.jpg);
+}
+.col3{
+    background-image: url(images/ex.jpg);
+}
+.col4{
+    background-image: url(images/Doctor.jpg);
+}
+
+.row0{
+    display:flow-root;
+    height: 60%;
+    align-items: center;
+}
+.col{
+    display:flow-root;
+    height: 60%;
+    align-items: center;
+    margin-bottom: 5%;
+}
+h1{
+    align-content: center;
+    color: #161414;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.p{
+    color: rgb(14, 13, 13);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.row{
+    margin-top: 5%;
+    font-size: 20px;
+    display:flex;
+    justify-content:space-evenly;  
+}
+
+.h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    text-align: center;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.services-col:hover{
+    box-shadow: 0 0 25px 35px rgba(2, 206, 9, 0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+    .row2{
+        flex-direction: column;
+    }
+}
+
+/*----------3RD PAGE-----------*/
+/**
+.end{
+
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(225, 227, 235, 0.7),rgba(4,9,30,0.7)),
+    url(images/page2_.jpg);
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}**/
+.row4{
+    min-height: 60vh;
+    width: 100%;
+    /* background-image: linear-gradient(rgba(225, 227, 235, 0.7),rgba(4,9,30,0.7)), */
+    background-image: url(images/ll.jpg);
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+}
+.end h1{
+    color: rgb(1, 56, 35);
+    font-size: 50px;
+    margin-top: 5%;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+@media(max-width: 700px){
+    .row{
+        font-size: 24px;
+    }
+}
+
+.last{
+    text-align: center;
+    margin: 10px 0 40px;
+    font-size: 20px;
+    min-height: 15vh;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 25px; 
+}
+
+.last h4{
+    margin-bottom: 20px;
+    margin-top: 5%;
+    font-weight: 800;
+    text-align: center;
+}
+
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+/*-------Calculate BMI-----------*/
+.sub-header{
+    height: 60vh;
+    width: 100%;
+    background-image: url(images/hh2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+
+.Calculate-BMI{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.BMI-col{
+    width: auto;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.BMI-col h1{
+    padding-top: 10px;
+}
+.BMI-col p{
+    padding: 15px 0 25px;
+}
+
+.red-btn{
+    border: 1px solid #f3f022;
+    background:transparent;
+    color: violet;
+    border-radius: 20px;
+}
+
+.red-btn hover{
+    color: white;
+}
+
+/*-------Get your meal Plan-----------*/
+.Get-mealplan{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.meal-col{
+    flex-basis: 48%;
+    padding: 80px 2px;
+}
+.meal-col img{
+    width: 100%;
+}
+.meal-col h1{
+    padding-top: 10px;
+}
+.meal-col p{
+    padding: 15px 0 25px;
+}
+
+/*-------Get your Excersice Plan-----------*/
+.Excersice-Plan{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+}
+.excersice-col{
+    flex-basis: 48%;
+    padding: 80px 2px;
+}
+.excersice-col img{
+    width: 100%;
+}
+.excersice-col h1{
+    padding-top: 10px;
+}
+.excersice-col p{
+    padding: 15px 0 25px;
+}
+
+/*--------Channel your Doctor-----------*/
+
+.Excersice-Plan{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+}
+.excersice-col{
+    flex-basis: 48%;
+    padding: 80px 2px;
+}
+.excersice-col img{
+    width: 100%;
+}
+.excersice-col h1{
+    padding-top: 10px;
+}
+.excersice-col p{
+    padding: 15px 0 25px;
+}
+
+/*------------cal-----*/
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 100%;
+  }

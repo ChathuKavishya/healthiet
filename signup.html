@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<link rel="styleSheet" href="signup.css" href="index.html" />
+
+<section class="main-container">
+<div class="su-container" id="bg">
+  <h1>SIGN UP</h1>
+  <div class="signup-form">
+    <form action="includes/signup.inc.php" method="POST">
+      <div class="form-row">
+        <input required placeholder="First Name..." type="text" name="fname" />
+        <input required placeholder="Last Name..." type="text" name="lname" />
+      </div>
+
+    <div class="form-radio">
+      <label>Gender</label>
+      <input type="radio" id="male" name="gender" value="Male">Male
+      
+      <input type="radio" id="female" name="gender" value="Female">Female
+      
+    </div>
+      <input required placeholder="Age..." type="text" name="age" />
+      <input required placeholder="Email..." type="text" name="email" />
+      <!--<input required placeholder="Username..." type="text" name="uname" />-->
+      <input required placeholder="Password..." type="password" name="pwd" />
+      <input required placeholder="Confirm Password..." type="password" name="repwd"/>
+      
+      <p>
+        by submitting this form you agree to our <a href="#">terms of use</a>
+      </p>
+      <a href = "../web/signup.php">
+      <button class="submit-btn" type="submit" name="submit" >SIGN UP</button></a>
+    </form>
+  </div>
+  <p>Already a member ? <a href="login.php">Log In!</a></p>
+</div>
+<div class="bg-img">
+  
+    <img src="#" alt="Sign Up">
+</div>
+
+
+</section>
+</body>
+</html>

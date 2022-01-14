@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Health Care Web Site</title>
+        <link href="images/Logo.png" rel="icon">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">    
+
+<style>
+    .login ul{
+        list-style-type: none;
+    }
+</style>
+</head>
+
+<body>
+<section class ="header">
+    <nav>
+        <a href="index.html"><img src="images/Logo.png"></a>
+      
+        <div class="login">
+            <ul>
+                <li><a href="includes/logout.inc.php"><button onclick="myFunction()"
+                    style="width:auto;" name="logOut" >Log Out</button>
+                </a></li>
+            </ul>
+        <div class="nav-links" id="navLinks">
+            
+            <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+            
+              
+                <ul>
+                <li><a href="cal-bmi.html">Calculate BMI</a></li>
+                <li><a href="meal-plan.html">Get your meal plan</a></li>
+                <li><a href="excersice.html">Get your Excersice Plan</a></li>
+                <li><a href="meet-doctor.html">Channel your Doctor</a></li>
+                
+            </ul>
+        </div>
+    </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+<h1>Welcome to Healthcare Center!</h1>
+<p>We will lead to a healthy nation with healthy citizens.</p>
+<a href="" class ="hero-btn">Visit us to know more...</a>
+
+</div>
+
+
+</section>
+
+<!-----------2nd page------------>
+
+<section class="services">
+   
+    <div class="row0">
+        <div class="col">
+            <h1>Our Goal</h1>
+        <p>Body mass index is a value derived from the mass and height of 
+            a person. <br>The BMI is defined as the body mass divided by the 
+            square of the body height, <br>and is expressed in units of kg/m², 
+            resulting from mass <br>in kilograms and height in metres.<br></p>    
+        </div>
+        <h1>Our Services</h1>
+        <p>Body mass index is a value derived from the mass and height of 
+            a person. <br>The BMI is defined as the body mass divided by the 
+            square of the body height, <br>and is expressed in units of kg/m², 
+            resulting from mass <br>in kilograms and height in metres.</p>    
+        
+    </div>
+            
+        <div class="row">
+            <div class="services-col col1">
+                 <h3>Calculate BMI</h3>
+                 <p>Body mass index is a value derived from <br>the mass and height of 
+                    a person. The BMI is <br> defined as the body mass divided by the 
+                    square of the body height, <br>and is expressed in units of kg/m², 
+                    resulting from mass in <br>kilograms and height in metres.</p>
+                </div>
+ 
+                <div class="services-col col2">
+                    <h3>Get your meal plan</h3>
+                    <p>Body mass index is a value derived from <br>the mass and height of 
+                       a person. The BMI is <br> defined as the body mass divided by the 
+                       square of the body height, <br>and is expressed in units of kg/m², 
+                       resulting from mass in <br>kilograms and height in metres.</p>
+                   </div>
+            
+                   
+                   <div class="services-col col3">
+                    <h3>Get your Excersice Plan</h3>
+                    <p>Body mass index is a value derived from <br>the mass and height of 
+                       a person. The BMI is <br> defined as the body mass divided by the 
+                       square of the body height, <br>and is expressed in units of kg/m², 
+                       resulting from mass in <br>kilograms and height in metres.</p>
+                   </div>
+
+                   <div class="services-col col4">
+                    <h3>Channel your Doctor</h3>
+                    <p>Body mass index is a value derived from <br>the mass and height of 
+                       a person. The BMI is <br> defined as the body mass divided by the 
+                       square of the body height, <br>and is expressed in units of kg/m², 
+                       resulting from mass in <br>kilograms and height in metres.</p>
+                   </div>
+        </div>
+</section>
+
+<!-----------3nd page------------>
+
+<selection class="end">
+    <div class="row4">
+        
+<h1>You can connect us from <br>anywhere in the world</h1>
+<a href="" class="hero-btn">CONTACT US</a>
+        </div>
+
+        <div class="last">
+            
+    <h4>About Us</h4>
+    <p>The about us page is commonly used by all types of businesses 
+        <br>to give customers more insight into who is involved with a 
+        <br>given business and exactly what it does</p>
+        <div class="row text-center pt-4">
+            <div class="col-md-12 col-sm-12">
+                <a href="#" class="text-secondary text-decoration-none">
+                    <i class="fab fa-instagram fa-2x px-2"></i>
+                    <i class="fab fa-facebook fa-2x px-2"></i>
+                    <i class="fab fa-linkedin fa-2x px-2"></i>
+                    <i class="fab fa-github fa-2x px-2"></i> </a>
+                <p class="pt-4 text-muted"> Copyright ©️ 2021 All Right Reserverd <span>TEAM ICONS</span> </p>
+            </div>
+        </div>
+</div>
+</section>
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"; 
+    }
+
+</script>
+
+</body>  
+</html>
+<!------<div class="row text-center pt-4">
+    <div class="col-md-12 col-sm-12">
+        <a href="#" class="text-secondary text-decoration-none">
+            <i class="fab fa-instagram fa-2x px-2"></i>
+            <i class="fab fa-facebook fa-2x px-2"></i>
+            <i class="fab fa-linkedin fa-2x px-2"></i>
+            <i class="fab fa-github fa-2x px-2"></i> </a>
+        <p class="pt-4 text-muted"> Copyright ©️ 2021 All Right Reserverd <span>TEAM ICONS</span> </p>
+    </div>
+</div>------>
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Health Care Web Site</title>
+        <link href="images/Logo.png" rel="icon">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">    
+</head>
+
+<body>
+<section class ="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/Logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cal-bmi.html">Calculate BMI</a></li>
+                <li><a href="meal-plan.html">Get your meal plan</a></li>
+                <li><a href="excersice.html">Get your Excersice Plan</a></li>
+                <li><a href="meet-doctor.html">Channel your Doctor</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+    </nav>
+<h1>Get Your Meal Plan</h1>
+</section>
+
+<!-----------Get your meal plan------------>
+
+<section class="Get-mealplan">
+
+    <div class="row">
+        <div class="meal-col">
+            <h1>Let's get your meal plan</h1>
+            <p>Meal planning is asking what’s for dinner question once for the whole week, <br>
+                instead of every night, and then shopping <br>for and prepping the ingredients 
+                before cooking. <br>We believe the simplest way to approach meal planning is 
+                with three steps. <br>Select your dinners and their recipes, if needed.</p>
+       <a class="hero-btn red-btn" href="showMealPlan.php">GET NOW!</a>
+       
+            </div>
+        <div class="meal-col">
+            <img src="images/meal.jpg" alt="">
+        </div>
+    </div>
+
+
+
+</section>
+
+
+
+
+
+
+<!-----------footer------------>
+
+<selection class="end">
+
+        <div class="last">
+            
+    <h4>About Us</h4>
+    <p>The about us page is commonly used by all types of businesses 
+        <br>to give customers more insight into who is involved with a 
+        <br>given business and exactly what it does</p>
+    <div class= "icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+</div>
+</section>
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"; 
+    }
+
+</script>
+
+</body>  
+</html>

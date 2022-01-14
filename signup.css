@@ -1,0 +1,155 @@
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px;
+  /* border-radius: 15px; */
+  /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,200&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400;1,700&display=swap');
+#bg {
+background: rgb(131, 236, 70);
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-size: cover;
+/*filter: blur(5px);*/
+}
+body {
+font-family: 'Roboto Mono', monospace;
+color: #4A4A4A;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+overflow: hidden;
+margin: 0;
+padding: 0;
+}
+h1 {
+  font-size: 60px;
+font-weight: 600;
+  color: rgb(2, 56, 6);
+}
+
+form {
+position: relative;
+width: 100%;
+max-width: 480px;
+padding: 80px 40px 40px;
+border-radius: 10px;
+color:#fff;
+background: #000000;
+box-shadow: 0 15px 25px #000000;
+}
+
+.su-container {
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  width: 500px;
+  padding: 10px;
+  
+}
+
+.su-container a {
+  text-decoration: none;
+  color: blue;
+}
+
+.su-container a:hover {
+  color: red;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signup-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 380px;
+  border-radius: 10px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+form .form-row input {
+  float: left;
+  width: 45%;
+}
+
+form input {
+  height: 40px;
+  box-sizing: border-box;
+  padding: 10px 10px 0px 10px;
+  border: none;
+  border-bottom: 2px solid #ebebeb;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+form input:hover {
+  border-bottom-color: #dcdcdc;
+}
+
+form input:focus {
+  outline: none;
+  border-bottom-color: red;
+}
+
+.submit-btn {
+  width: 70%;
+  margin: auto;
+  background-color: red;
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 2px red;
+  box-shadow: 0px 8px 15px rgba(202, 36, 36, 0.205);
+
+  white-space: nowrap;
+  text-align: center;
+  padding: 10px 20px;
+  color: white;
+  font-size: 15px;
+  font-family: "Bree Serif", serif;
+}
+
+.submit-btn:hover {
+  color: red;
+  box-shadow: inset 0 0 0 2px red;
+  background-color: white;
+}
+
+form .form-radio input {
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+form .form-radio label{
+    margin-left: -150px;
+    font-family: 'Roboto Mono', monospace;
+    width: 500px;
+    padding: 10px;
+}
